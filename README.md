@@ -1,13 +1,13 @@
-#bode.tns
+# bode.tns
 
 Bode.tns is a quick and dirty lua script intended to plot double-logarithmic bode-diagrams on directly on your TI-Nspire calculator. It is especially targeted towards electrical engineering problems.
 
-##Features
+## Features
 * Amplitude and phase visualization
 * Fast plotting with adjustable step width
 * Works on all TI-Nspire calculators
 
-##Usage
+## Usage
 1. Download or clone this repository
 2. Load the bode.tns file onto your calculator (e.g. Use Nspire Link Software)
 3. Open the document on your calculator
@@ -16,16 +16,16 @@ Bode.tns is a quick and dirty lua script intended to plot double-logarithmic bod
 6. On tab 1.3 you can see the amplitude, the phase plot is on tab 1.4
 7. Move around with the arrow keys, zoom with +, -, /, *
 
-####Change step width
+#### Change step width
 Redefine the `step` variable by typing `step:=x` where x denotes the step width. Note that in order to increase drawing performance, drawing is done linearly with respect to the decades. A step value of 1 corresponds to a single point every decade, a value of 0.1 to 10 points/decade.
 
 I managed to get the best results with values around 0.02
 
 
-####Manually define window
+#### Manually define window
 You can manually define the display window by defining the variables `xstart`, `xend`, `ystart`, `yend`, `ystartp` and `yendp` where the variables ending with p only affect the phase plot. 
 
-##License
+## License
 The MIT License (MIT)
 
 Copyright (c) 2012 Thomas Debrunner
